@@ -62,3 +62,81 @@ html {
   a {
     color: var(--text-color01);
   }
+
+
+
+  /* ---------<header>--------- */
+.logo img {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+header {
+  margin: 0 auto;
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  border-bottom: var(--main-color) 2px solid;
+  background-color: #fff;
+}
+
+header .logo {
+  padding: 60px;
+}
+
+header nav ul {
+  display: flex;
+  font-size: 18px;
+}
+
+header nav ul li {
+  width: 9rem;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+header nav ul li .depth2 {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.depth2.on{
+  display: flex;
+}
+
+header nav ul li .depth2.on {
+  opacity: 1;
+  height: 100%;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  width: 100%;
+  overflow: inherit;
+  border-bottom: 1px solid #ccc;
+}
+
+header nav ul li .depth2 li {
+  height: 40px;
+  padding-bottom: 40px;
+  background: rgba(255, 255, 255, 0.661);
+}
+
+header nav .depth1 li:hover {
+  color: var(--main-color);
+}
+
+.depth2 > li > a:hover{
+  transition: .3s;
+  color: #1aa0a5;
+}
+
