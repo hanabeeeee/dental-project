@@ -45,7 +45,7 @@ html {
   }
 
   .container {
-    width: 1920px;
+    width: 100vw;
       margin: 0 auto;
       /* outline: 1px solid red; */
       background: #fff;

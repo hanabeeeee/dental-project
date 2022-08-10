@@ -9,17 +9,17 @@ body {
 /****** main-visual slider ***/
 #main-visual {
     overflow: hidden;
+    z-index: 99;
 }
 
 #main-visual .container {
-    width: 1920px;
+    width: 100vw;
     height: 100vh;
 }
 
 #main-visual .swiper-container {
-    width: 1920px;
+    width: 1920vw;
     height: 100%;
-    z-index: 99999;
   }
 
   #main-visual .swiper-container .swoper-slide img {
@@ -59,7 +59,6 @@ body {
     margin-top: 53px;
     justify-content: center;
     align-items: center;
-
 }
 
 #dental-clinic .container- .clinic-box {
@@ -69,6 +68,7 @@ body {
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
+    z-index: 0;
 }
 
 #dental-clinic .container- .clinic-box .text {
@@ -444,7 +444,7 @@ body {
 /******* fixed-menu **/
 
 #fixed-menu {
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     bottom: 0;
     /* justify-content: start;
