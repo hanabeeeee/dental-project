@@ -14,6 +14,8 @@ body {
 #main-visual .container {
     width: 100vw;
     height: 100vh;
+    background: #fff;
+    z-index: 9999999;
 }
 
 #main-visual .swiper-container {
@@ -33,11 +35,13 @@ body {
 #main-visual .swiper-button-prev {
     color: #fff;
     padding-left: 50px;
+    z-index: 999999999;
 }
 
 #main-visual .swiper-button-next {
     color: #fff;
     padding-right: 50px;
+    z-index: 999999999;
 }
 
 #main-visual .swiper-scrollbar {
