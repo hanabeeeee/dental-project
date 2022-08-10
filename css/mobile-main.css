@@ -1,0 +1,19 @@
+.container {
+    width: 375px;
+      margin: 0 auto;
+      /* outline: 1px solid red; */
+      background: #fff;
+  }
+
+  .container- {
+    width: 375px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    /* background: rgb(169, 169, 169); */
+    background: #fff;
+  }
+
+  #main-visual .swiper-container {
+    width: 100%;
+    height: 100%;
+  }

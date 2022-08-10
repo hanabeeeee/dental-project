@@ -4,6 +4,105 @@ body {
 }
 
 
+  /* ---------<header>--------- */
+  .logo img {
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  header {
+    margin: 0 auto;
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999999;
+    border-bottom: var(--main-color) 2px solid;
+    background-color: #fff;
+  }
+  
+  header .logo {
+    padding: 60px;
+  }
+  
+  header nav ul {
+    display: flex;
+    font-size: 18px;
+  }
+  
+  header nav ul li {
+    width: 9rem;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  header nav ul li .depth2 {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .depth2.on{
+    display: flex;
+  }
+  
+  header nav ul li .depth2.on {
+    opacity: 1;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    /* padding: 10px 0; */
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    width: 100%;
+    overflow: inherit;
+  }
+  
+  header .depth2 {
+  }
+  
+  
+  header .depth2 > li {
+    height: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.661);
+  }
+  
+  header nav .depth1 li:hover {
+    color: var(--main-color);
+  }
+  
+  .depth2 > li:hover{
+    transition: .3s;
+    background: var(--sub-color01);
+  }
+  
+  .depth2 > li:hover > a{
+    color: #fff;
+  }
+
+
+.container {
+    width: 100vw;
+      margin: 0 auto;
+      /* outline: 1px solid red; */
+      background: #fff;
+  }
+
+  .container- {
+    width: 1440px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    /* background: rgb(169, 169, 169); */
+    background: #fff;
+  }
 
 
 /****** main-visual slider ***/
@@ -15,7 +114,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: #fff;
-    z-index: 9999999;
+    z-index: 999999;
 }
 
 #main-visual .swiper-container {
