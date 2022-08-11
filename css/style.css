@@ -3,10 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 
+/* pc mobile 공통 **/
+
 
 :root{
     --main-color:#1aa0a5;
-    --sub-color01:#a2d9cf;
+    --sub-color01:rgba(162, 217, 207, 0.3);
     --sub-color02: #85CDC1;
     --text-color01:#333333;
     --text-color02: #999999;

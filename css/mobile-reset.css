@@ -1,0 +1,52 @@
+.container {
+    max-width: 768px;
+    width: 100%;
+      margin: 0 auto;
+      /* outline: 1px solid red; */
+      background: #fff;
+  }
+
+  .container- {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    /* background: rgb(169, 169, 169); */
+    background: #fff;
+  }
+
+
+
+  /* footer */
+#mobile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    padding-top: 20px;
+}
+#mobile-footer img{
+    margin-bottom: 20px;
+}
+#mobile-footer strong{
+    line-height: 60px;
+}
+
+#mobile-footer p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+#mobile-footer a .bi-instagram {
+    margin-right: 20px;
+}
+#mobile-footer .bi{
+    color: #666;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+#pc-footer {
+    display: none;
+}

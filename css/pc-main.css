@@ -20,7 +20,7 @@
     height: 100%;
   }
 
-  #main-visual .swiper-container .swoper-slide img {
+#main-visual .swiper-container .swoper-slide img {
     height: 100vh;
   }
 
@@ -47,6 +47,9 @@
     top: -26px;
 }
 
+#main-visual-mobile {
+    display: none;
+}
 
 
 
@@ -54,25 +57,51 @@
 
 /******** dental-clinic **/
 
+#dental-clinic .clinic-containers {
+    display: flex;
+    margin-top: 100px;
+}
 
-#dental-clinic .container- {
+
+#dental-clinic .container-, .container--{
     display: flex;
     margin-top: 53px;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    
 }
+
 
 #dental-clinic .container- .clinic-box {
     justify-content: center;
     align-items: center;
     display: flex;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 10px;
+    padding: auto;
+    margin: auto;
     z-index: 2;
 }
 
+#dental-clinic .container-- .clinic-box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    z-index: 2;
+    padding: auto;
+    margin: auto;
+}
+
 #dental-clinic .container- .clinic-box .text {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+#dental-clinic .container-- .clinic-box .text {
     position: absolute;
     text-align: center;
     color: #fff;
@@ -83,7 +112,18 @@
     padding-bottom: 16px;
 }
 
+#dental-clinic .container-- .clinic-box .text p {
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+
 #dental-clinic .container- .clinic-box .text h3 {
+    font-size: 32px;
+    margin-bottom: 19px;
+}
+
+#dental-clinic .container-- .clinic-box .text h3 {
     font-size: 32px;
     margin-bottom: 19px;
 }
@@ -93,11 +133,19 @@
     font-size: 20px;
 }
 
+#dental-clinic .container-- .clinic-box .text a {
+    color: #fff;
+    font-size: 20px;
+}
 
 
 
 
 /******** doctor-about **/
+
+#mobile-doctor-about {
+    display: none;
+}
 
 #doctor-about {
     margin-top: 204px;
@@ -133,18 +181,18 @@
 }
 
 #doctor-about .about-btn {
+    width: 348px;
+    height: 63px;
     background: var(--main-color);
-    border: 3px solid #fff;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 40px;
-    padding-right: 40px;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#doctor-about .about-text a {
+#doctor-about .about-btn a {
+    font-size: 24px;
     color: #fff;
-    font-size: 32px;
 }
 
 
@@ -153,6 +201,10 @@
 
 
 /******* medical **/
+
+#medical-mobile {
+    display: none;
+}
 
 #medical {
     display: flex;
@@ -243,7 +295,16 @@
 
 
 
+
+
 /******* sub-banner **/
+
+#sub-banner .col p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 #sub-banner .col {
     background-image: url(../images/sub-banner.jpeg);
@@ -256,12 +317,12 @@
 }
 
 #sub-banner .col .text p {
-    margin-top: 90px;
+    margin-top: 30px;
     text-align: center;
     color: #fff;
     font-size: 36px;
     padding: 70px;
-    line-height: 60px;
+    line-height: 50px;
     
 }
 
@@ -276,6 +337,10 @@
 
 
 /***** recommend **/
+
+#recommend-mobile {
+    display: none;
+}
 
 #recommend {
     margin-top: 100px;

@@ -48,6 +48,25 @@ $(document).ready(function(){
       });
 })
 
+$(document).ready(function(){
+    const swiper = new Swiper('#main-visual-mobile .swiper-container', {
+  
+        autoplay: {
+          delay: 3000,
+        },
+        
+        direction: 'horizontal',  // 효과
+        loop: true,
+        
+      // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+    
+      });
+})
+
 $(function () {
   $('header nav .depth1 li').hover(
       function () {

@@ -102,7 +102,11 @@
 
   /* footer */
 
-footer  {
+  #mobile-footer {
+    display: none;
+  }
+
+#pc-footer  {
     box-sizing: border-box;
     position: relative;
     width: 100vw;
@@ -113,14 +117,14 @@ footer  {
     background: #FFFFFF;
     border-top: 1px solid #BCBCBC;
 }
-footer img{
+#pc-footer img{
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translate(-50%);
     line-height: 354px;
 }
-footer p {
+#pc-footer p {
     position: absolute;
     width: 899px;
     height: 140px;
@@ -136,7 +140,7 @@ footer p {
     color: #BCBCBC;
 }
 
-footer a .bi-instagram {
+#pc-footer a .bi-instagram {
     position: absolute;
     right: 10.1%;
     top: 42.94%;
@@ -144,7 +148,7 @@ footer a .bi-instagram {
     font-size: 50px;
 }
 
-footer a .bi-twitter {
+#pc-footer a .bi-twitter {
     position: absolute;
     right: 5.26%;
     top: 42.94%;
@@ -152,6 +156,6 @@ footer a .bi-twitter {
     font-size: 50px;
 }
 
-footer .bi{
+#pc-footer .bi{
     color: #666;
 }
