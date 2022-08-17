@@ -1,4 +1,4 @@
-# 혜임-사람그리고치과 홈페이지 리뉴얼
+# 혜임 - 사람그리고치과 홈페이지 리뉴얼
 
 리뉴얼 페이지: https://hanabeeeee.github.io/dental-project/
 
