@@ -70,16 +70,20 @@ $(document).ready(function(){
     });
 })
 
+// 이미지 및 콘텐츠 로딩 체크
+window.onload = function() {
+    // AOS 초기화
+    AOS.init();
+}
 
-
-$(function(){
-  $(window).scroll(function(){
-    var scrollPosition = $(window).scrollTop();
-    console.log(scrollPosition);
-    if( scrollPosition >= 600 ){
-      $('#fixed-menu').stop().slideDown();
-    } else {
-      $('#fixed-menu').stop().slideUp();
-    }
-  });
-});
+// $(function(){
+//   $(window).scroll(function(){
+//     var scrollPosition = $(window).scrollTop();
+//     console.log(scrollPosition);
+//     if( scrollPosition >= 600 ){
+//       $('#fixed-menu').stop().slideDown();
+//     } else {
+//       $('#fixed-menu').stop().slideUp();
+//     }
+//   });
+// });
