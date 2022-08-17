@@ -1,6 +1,62 @@
+/* web font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/* bootstrap icon cdn*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+:root{
+    --main-color:#1aa0a5;
+    --sub-color01:#a2d9cf;
+    --sub-color02: #85CDC1;
+    --text-color01:#333333;
+    --text-color02: #999999;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  li, ol, ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  table {
+    border-collapse:collapse;
+    border-spacing: 0;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+
+  i {
+    font-size: 48px;
+  }
+
+  a {
+    color: var(--text-color01);
+  }
+
+  
 
   /* ---------<header>--------- */
+
+  header .gnb-toggle{
+    display: none;
+  }
+  #gnb{
+    display: none;
+  }
   .logo img {
     width: 200px;
     height: 50px;
@@ -15,25 +71,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99999999;
+    z-index: 99999999999;
     border-bottom: var(--main-color) 2px solid;
     background-color: #fff;
+    padding: 0 60px;
   }
   
   header .logo {
-    padding: 60px;
+    padding: 60px 0;
   }
   
   header nav ul {
     display: flex;
     font-size: 18px;
   }
-  
-  header nav ul li {
+  header .depth1 > li{
+    line-height: 50px;
+    height: 70px;
+  }
+  header nav > ul > li {
     width: 9rem;
     height: 40px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
+    line-height: 45px;
+    cursor: pointer;
+    
   }
   
   header nav ul li .depth2 {
@@ -51,40 +114,45 @@
     height: 100%;
     font-size: 16px;
     text-align: center;
-    margin-top: 15px;
     /* padding: 10px 0; */
+    padding-top: 19px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     transition: 0.3s;
     width: 100%;
     overflow: inherit;
   }
   
-  header .depth2 {
-  }
-  
-  
   header .depth2 > li {
     height: 70px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    background: rgba(255, 255, 255, 0.661);
+    background: rgba(255, 255, 255, 0.8);
+
+    width: 9rem;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
   }
-  
+  .depth2 > li > a{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+  }
   header nav .depth1 li:hover {
     color: var(--main-color);
   }
-  
+
   .depth2 > li:hover{
     transition: .3s;
-    background: var(--sub-color01);
+    background: rgba(90, 90, 90, 0.549);
   }
   
   .depth2 > li:hover > a{
     color: #fff;
   }
 
-
+  /* container ?*/
 .container {
     width: 100vw;
       margin: 0 auto;
@@ -100,62 +168,36 @@
     background: #fff;
   }
 
-  /* footer */
-
-  #mobile-footer {
-    display: none;
-  }
-
-#pc-footer  {
-    box-sizing: border-box;
+/* footer */
+footer  {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
-    height: 354px;
-    left: 0px;
-    bottom: 0;
-    z-index: 5000;
+    height: 264px;
     background: #FFFFFF;
     border-top: 1px solid #BCBCBC;
+    padding: 30px 60px;
 }
-#pc-footer img{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%);
-    line-height: 354px;
+footer img{
+width: 200px;
+height: 50px;
 }
-#pc-footer p {
-    position: absolute;
-    width: 899px;
-    height: 140px;
-    left: 40%;
-    top: 99px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+footer p {
+    font-size: 12px;
     line-height: 35px;
-
     color: #BCBCBC;
 }
 
-#pc-footer a .bi-instagram {
-    position: absolute;
-    right: 10.1%;
-    top: 42.94%;
-    bottom: 45.76%;
-    font-size: 50px;
+footer a .bi-instagram {
+    font-size: 28px;
+    margin-right: 20px;
 }
 
-#pc-footer a .bi-twitter {
-    position: absolute;
-    right: 5.26%;
-    top: 42.94%;
-    bottom: 45.76%;
-    font-size: 50px;
+footer a .bi-twitter {
+    font-size: 28px;
 }
-
-#pc-footer .bi{
+footer .bi{
     color: #666;
 }

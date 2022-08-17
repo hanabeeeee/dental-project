@@ -1,5 +1,4 @@
-@import url(./mobile-reset.css);
-@import url(./style.css);
+@import url('./mobile-reset.css');
 
 
 
@@ -12,19 +11,20 @@ body {
 }
 
 
+
 #main-visual {
    display: none;
 }
 
-
 #main-visual-mobile {
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   overflow: hidden;
+  margin-top: 70px;
 }
 
 #main-visual-mobile .container {
   background: #fff;
-  z-index: 999999;
+  /* z-index: 999999; */
 }
 
 #main-visual-mobile .swiper-container .swoper-slide img {
@@ -35,9 +35,27 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  z-index: 9999999;
+  /* z-index: 9999999; */
 }
 
+
+
+
+
+/******* fixed-menu **/
+
+#fixed-menu {
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  /* justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; */
+
+}
 
 
 
@@ -49,12 +67,11 @@ body {
 
 
 
-
 /******** dental-clinic **/
 
 #dental-clinic {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,10 +82,25 @@ body {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
-#dental-clinic .container-, .container-- {
+#dental-clinic .container01, .container02 {
   display: flex;
+}
+
+#dental-clinic .container01 .box01 {
+  margin-right: 10px;
+}
+
+#dental-clinic .container01 {
+  margin-bottom: 10px;
+}
+
+#dental-clinic .container02 .box03 {
+  margin-right: 10px;
 }
 
 
@@ -90,42 +122,70 @@ body {
   color: #fff;
 }
 
-#dental-clinic .container- .clinic-box .text p {
+#dental-clinic .container01 .clinic-box .text p {
   font-size: 12px;
   padding-bottom: 10px;
 }
 
-#dental-clinic .container- .clinic-box .text h3 {
+#dental-clinic .container01 .clinic-box .text h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-#dental-clinic .container- .clinic-box .text a {
+#dental-clinic .container01 .clinic-box .text a {
   color: #fff;
   font-size: 12px;
 }
 
-#dental-clinic .container-- {
-  margin-top: 18px;
+#dental-clinic .container02 {
+  margin:auto;
 }
 
-#dental-clinic .container-- .clinic-box .text p {
+#dental-clinic .container02 .clinic-box .text p {
   font-size: 12px;
   padding-bottom: 10px;
 }
 
-#dental-clinic .container-- .clinic-box .text h3 {
+#dental-clinic .container02 .clinic-box .text h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-#dental-clinic .container-- .clinic-box .text a {
+#dental-clinic .container02 .clinic-box .text > a {
   color: #fff;
   font-size: 12px;
 }
 
-#dental-clinic .container-- .clinic-box .text a:hover {
+#dental-clinic .container02 .clinic-box .text a:hover {
   color: var(--main-color);
+}
+
+#dental-clinic .container01 .box01 {
+  background-image: url(../images/dental-clinic\ 01.jpg);
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+#dental-clinic .container01 .box02 {
+  background-image: url(../images/dental-clinic\ 02.jpg);
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+#dental-clinic .container02 .box03 {
+  background-image: url(../images/dental-clinic\ 03.jpg);
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+#dental-clinic .container02 .box04 {
+  background-image: url(../images/dental-clinic\ 04.jpg);
+  background-size: contain;
+  width: 150px;
+  height: 150px;
 }
 
 
@@ -141,6 +201,7 @@ body {
 #mobile-doctor-about {
   display: flex;
   flex-direction: column;
+  /* margin-bottom: 100px; */
 }
 
 #mobile-doctor-about .col {
@@ -438,4 +499,3 @@ body {
 #sub-footer .call-btn {
   display: none;
 }
-

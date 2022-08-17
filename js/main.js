@@ -1,23 +1,3 @@
-$(function(){
-
-    // //slider
-    // let num = 0;
-
-    // function changeSlider (img_num){
-    //     let img_width = 1920 * img_num;
-
-    //     $('.slider .sliders').css({transform: `translateX(${-img_width}px)`
-    //     })//slider
-    // }
-
-    // //자동 재생
-    // setInterval(function(){
-    //     num++;
-    //     if(num > 2) {num = 0;}
-    //     changeSlider(num);
-    // }, 3000)
-});
-
 
 $(document).ready(function(){
     const swiper = new Swiper('#main-visual .swiper-container', {
@@ -48,31 +28,41 @@ $(document).ready(function(){
       });
 })
 
-$(document).ready(function(){
-    const swiper = new Swiper('#main-visual-mobile .swiper-container', {
-  
-        autoplay: {
-          delay: 3000,
-        },
-        
-        direction: 'horizontal',  // 효과
-        loop: true,
-        
-      // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
 
-    
-      });
+$(document).ready(function(){
+  const swiper = new Swiper('#main-visual-mobile .swiper-container', {
+
+      autoplay: {
+        delay: 3000,
+      },
+      
+      direction: 'horizontal',  // 효과
+      loop: true,
+      
+    // If we need pagination
+      pagination: {
+          el: '.swiper-pagination',
+      },
+
+  
+    });
 })
 
-$(function () {
-  $('header nav .depth1 li').hover(
-      function () {
-          $(this).find('.depth2').addClass('on');
-      },
-      function () {
-          $(this).find('.depth2').removeClass('on');
-      });
-});
+
+
+// $(function(){
+//   $(window).scroll(function(){
+//     var scrollPosition = $(window).scrollTop();
+//     console.log(scrollPosition);
+//     if( scrollPosition >= 600 ){
+//       $('#fixed-menu').stop().slideDown();
+//     } else {
+//       $('#fixed-menu').stop().slideUp();
+//     }
+//   });
+// });
+
+window.onload = function() {
+    // AOS 초기화
+    AOS.init();
+}
