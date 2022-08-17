@@ -176,7 +176,7 @@ html {
 
 
 
-  
+
 /* footer */
 footer  {
     display: flex;
@@ -186,6 +186,7 @@ footer  {
     color: #999;
     padding: 20px 0;
     font-size: 12px;
+    background: #ededed;
 }
 footer img{
     margin-bottom: 15px;
