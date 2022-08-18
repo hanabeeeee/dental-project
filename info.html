@@ -6,18 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사람그리고치과</title>
-    <!--bootstrap cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <!-- style.css -->
-    <link rel="stylesheet" href="css/info.css">
-    <!-- pc-main.css -->
-    <link rel="stylesheet" href="css/pc-main.css" media="screen and(min-width: 768px)">
-    <!-- mobile-main.css -->
-    <link rel="stylesheet" href="css/mobile-main" media="screen and(max-width: 767px)">
+    <!-- pc-info.css -->
+    <link rel="stylesheet" href="css/pc-info.css" media="screen and (min-width: 768px)">
+    <!-- mobile-info.css -->
+    <link rel="stylesheet" href="css/mobile-info.css" media="screen and (max-width: 767px)">
     <!-- jquery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- main.js -->
-    <script src="js/main.js"></script>
+    <!-- header.js -->
+    <script src="js/header.js"></script>
 </head>
 
 <body id="info">
@@ -27,71 +23,73 @@
                 <img src="images/logo.png" alt="logo">
             </a>
         </div>
+        <i class="bi bi-list gnb-toggle"></i>
+        <div id="gnb">
+            <article>
+                <h3>H U M A N & D E N T A L  C L I N I C</h3>
+                <i class="bi bi-x gnb-close"></i>
+            </article>
+            <ul>
+                <a href="./info.html"><li>병원소개</li></a>
+                <a href="./clinic.html"><li>임플란트</li></a>
+                <a href="./clinic.html"><li>치아교정</li></a>
+                <a href="./clinic.html"><li>미백/성형</li></a>
+                <a href="./community.html"><li>병원소식</li></a>
+                <a href="./map.html"><li>진료안내</li></a>
+            </ul>
+        </div>
         <nav>
             <ul class="depth1">
-                <li><a href="#">병원소개</a>
+                <li>병원소개
                     <ul class="depth2">
-                        <li><a href="#">의료진소개</a></li>
-                        <li><a href="#">의료진소개</a></li>
-                        <li><a href="#">의료진소개</a></li>
-                        <li><a href="#">의료진소개</a></li>
+                        <li><a href="./info.html">의료진소개</a></li>
                     </ul>
                 </li>
-
-
-                <li><a href="#">임플란트</a>
+                <li>임플란트
                     <ul class="depth2">
-                        <li><a href="#">베이직 임플란트</a></li>
-                        <li><a href="#">레이저 임플란트</a></li>
-                        <li><a href="#">당일 즉시 임플란트 </a></li>
-                        <li><a href="#">틀니 임플란트</a></li>
+                        <li><a href="./clinic.html">베이직 임플란트</a></li>
+                        <li><a href="./clinic.html">레이저 임플란트</a></li>
+                        <li><a href="./clinic.html">당일 즉시 임플란트 </a></li>
+                        <li><a href="./clinic.html">틀니 임플란트</a></li>
                     </ul>
                 </li>
-                <li><a href="#">치아교정</a>
+                <li>치아교정
                     <ul class="depth2">
-                        <li><a href="#">수술교정</a></li>
-                        <li><a href="#">설측교정</a></li>
-                        <li><a href="#">성인교정</a></li>
-                        <li><a href="#">공지사항</a></li>
+                        <li><a href="./clinic.html">수술교정</a></li>
+                        <li><a href="./clinic.html">설측교정</a></li>
+                        <li><a href="./clinic.html">성인교정</a></li>
                     </ul>
                 </li>
-                <li><a href="#">미백/성형</a>
+                <li>미백/성형
                     <ul class="depth2">
-                        <li><a href="#">치아미백</a></li>
-                        <li><a href="#">치아성형</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">치료후기</a></li>
+                        <li><a href="./clinic.html">치아미백</a></li>
+                        <li><a href="./clinic.html">치아성형</a></li>
                     </ul>
                 </li>
-                <li><a href="#">병원소식</a>
+                <li>병원소식
                     <ul class="depth2">
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">치료후기</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">치료후기</a></li>
+                        <li><a href="./community.html">공지사항</a></li>
+                        <li><a href="./community.html">치료후기</a></li>
                     </ul>
                 </li>
-                <li><a href="#">진료안내</a>
+                <li>진료안내
                     <ul class="depth2">
-                        <li><a href="#">진료시간</a></li>
-                        <li><a href="#">오시는길</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">치료후기</a></li>
+                        <li><a href="./map.html">진료시간</a></li>
+                        <li><a href="./map.html">오시는길</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-
     <section class="info_container">
         <section id="title">
             <div class="title-img">
-                <img src="images/info_background.jpg" alt="title-img">
+                <img src="images/info_background.jpeg" alt="title-img">
                 <h1>병원소개</h1>
-                <div class="nav-implant">
+                <div class="nav-info">
                     <ul>
-                        <li class="on">병원소개</li>
-                        <li>의료진소개</li>
+                        <li onclick="scrollclinic()" class="tab_clinic on">병원소개</li>
+                        <li onclick="scrolldoctor()" class="tab_doctor">의료진소개</li>
                     </ul>
                 </div>
             </div>
@@ -106,7 +104,7 @@
                     <p>기존 2차원적 치과 X-RAY보다 3,000배 이상의 정확성, 정밀성을 가집니다.<br>
                         보이지 않았던 부위까지 선명하게 진단하여 정확한 시술을 할 수 있습니다.
                     </p>
-                    <img src="/images/info-system_1.jpg" alt="CT">
+                    <img src="images/info-system_1.jpeg" alt="CT">
                 </div>
                 <div class="info_col">
                     <h3>INTRAORAL CAMERA - EINSTEIN STELLA
@@ -114,20 +112,20 @@
                     <p>국내 최초 치과 전용 무선이동형 엑스레이로 임플란트와 신경치료 중 환자분이 이동하지않고<br>
                         편리하고 신속하게 엑스레이를 찍을 수 있습니다.
                     </p>
-                    <img src="/images/info-system_2.jpg" alt="X-ray">
+                    <img src="images/info-system_2.jpeg" alt="X-ray">
                 </div>
                 <div class="info_col">
                     <h3>INTRAORAL CAMERA - EINSTEIN STELLA
                     </h3>
                     <p>무선이동형 구강카메라로 쉽고 빠르게 진단 시의 상태,<br>
                         치료과정 및 결과를 보여드림으로써 환자분들의 이해를 도울 수 있습니다.</p>
-                    <img src="/images/info-system_3.jpg" alt=" CAMERA">
+                    <img src="images/info-system_3.jpeg" alt=" CAMERA">
                 </div>
                 <div class="info_col">
                     <h3>교정정밀분석 - V-CEPH</h3>
                     <p>교정 진단 및 분석 프로그램으로정확하고 정밀한 분석이 가능합니다.<br>
                         치료 후 모습을 morphing할 수있어 환자분들의 이해를 도울 수 있습니다.</p>
-                    <img src="/images/info-system_4.jpg" alt="V-CEPH">
+                    <img src="images/info-system_4.jpeg" alt="V-CEPH">
                 </div>
             </div>
         </div>
@@ -136,7 +134,7 @@
             <h2>의료진소개</h2>
             <div class="doctor_col">
                 <ul>
-                    <li><img src="/images/info_doctor_1.jpg" alt="doctor_picture"></li>
+                    <li><img src="images/info_doctor_1.jpeg" alt="doctor_picture"></li>
                     <li class="doctor_box">
                         <div class="doctor_box_container">
                             <h4>대표원장/전문의<span>&nbsp;송경호</span></h4>
@@ -169,12 +167,12 @@
                                 #임플란트 수술</p>
                         </div>
                     </li>
-                    <li> <img src="/images/info_doctor_2.jpg" alt="doctor_picture"></li>
+                    <li> <img src="images/info_doctor_2.jpeg" alt="doctor_picture"></li>
                 </ul>
             </div>
             <div class="doctor_col">
                 <ul>
-                    <li><img src="/images/info_doctor_3.jpg" alt="doctor_picture"></li>
+                    <li><img src="images/info_doctor_3.jpeg" alt="doctor_picture"></li>
                     <li class="doctor_box">
                         <div class="doctor_box_container">
                             <h4>교정과원장/전문의<span>&nbsp;조은희</span></h4>
@@ -202,8 +200,8 @@
         경기도 성남시 분당구 삼평동 670번지 유스페이스 1동 306호 <br><br>
             
         <strong>COPYRIGHT(c) Human Dental Clinic.LTD. ALL RIGHTS RESERVERD.</strong></p>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-twitter"></i></a>
+        <div class="sns"><a href="./"><i class="bi bi-instagram"></i></a>
+        <a href="./"><i class="bi bi-twitter"></i></a></div>
     </footer>
 </body>
 

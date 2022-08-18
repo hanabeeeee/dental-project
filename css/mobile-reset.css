@@ -79,6 +79,7 @@ html {
     width: 100vw;
     height: 70px;
     position: fixed;
+    top: 0;
     z-index: 99999999;
     border-bottom: var(--main-color) 2px solid;
     background-color: #fff;
