@@ -1,15 +1,22 @@
 # 사람그리고치과 홈페이지 Redesign
-#### 오혜임
 
-리뉴얼 페이지: https://hanabeeeee.github.io/dental-project/
+## 오혜임
 
-기존 페이지: http://www.humandentalclinic.com/
+#### 리뉴얼 페이지
+
+https://hanabeeeee.github.io/dental-project/
+
+#### 기존 페이지
+
+http://www.humandentalclinic.com/
+
 
 ### 프로젝트 기여도
 
     - 모바일, 피시 메인 페이지 제작
 
     - 헤더 모션
+
 
 ### 주요 구현 내용
 
