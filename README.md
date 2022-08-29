@@ -13,13 +13,13 @@
 
 ### 주요 구현 내용
 
-"
-  1. 포토샵을 이용해 Main-visual 이미지 제작
-  2. Swiper를 이용한 이미지 슬라이더
-  3. Clinic-box, Recommend를 마우스로 호버하면 이미지가 바뀌며 커짐
-  4. AOS 라이브러리를 이용해 Medical, Sub footer에 애니메이션 효과 적용
-  5. 미디어 쿼리를 통해 모바일, 피시 각각의 반응형 css 적용
-  6. 언제나 화면 하단에 고정되어 있는 Fixed-menu"
+
+    1. 포토샵을 이용해 Main-visual 이미지 제작
+    2. Swiper를 이용한 이미지 슬라이더
+    3. Clinic-box, Recommend를 마우스로 호버하면 이미지가 바뀌며 커짐
+    4. AOS 라이브러리를 이용해 Medical, Sub footer에 애니메이션 효과 적용
+    5. 미디어 쿼리를 통해 모바일, 피시 각각의 반응형 css 적용
+    6. 언제나 화면 하단에 고정되어 있는 Fixed-menu
 
 
 ### About
