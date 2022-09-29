@@ -76,17 +76,17 @@ window.onload = function() {
   AOS.init();
 }
 
-let vw = document.documentElement.clientWidth;
-if( vw > 768){
-$(function(){
-$(window).scroll(function(){
-  var scrollPosition = $(window).scrollTop();
-  console.log(scrollPosition);
-  if( scrollPosition >= 600 ){
-    $('#fixed-menu').stop().fadeIn();
-  } else {
-    $('#fixed-menu').stop().fadeOut();
-  }
-});
-});
-}
+// let vw = document.documentElement.clientWidth;
+// if( vw > 768){
+// $(function(){
+// $(window).scroll(function(){
+//   var scrollPosition = $(window).scrollTop();
+//   console.log(scrollPosition);
+//   if( scrollPosition >= 600 ){
+//     $('#fixed-menu').stop().fadeIn();
+//   } else {
+//     $('#fixed-menu').stop().fadeOut();
+//   }
+// });
+// });
+// }

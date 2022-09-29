@@ -65,6 +65,10 @@ html {
     color: var(--text-color01);
   }
 
+ #fixed-menu {
+  display: none;
+ }
+
   
 
   
